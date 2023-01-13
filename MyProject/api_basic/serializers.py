@@ -8,7 +8,7 @@ class ArticleSerializer(serializers.Serializer):
     date = serializers.DateField()
 
     def create(self,validated_data):
-        return Article.objects.create(validated_data)
+        return Article.objects.create(**validated_data)
     def update(self,instance,validate_data):
         instance.title =validate_data.get('title',instance.title)
         instance.author =validate_data.get('author',instance.author)
