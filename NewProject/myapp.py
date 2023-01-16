@@ -15,10 +15,10 @@ def get_data(id=None):
 
 def post_data():
     data={
-    'title':'Python',
-    'author':'geekyshow',
+    'title':'java',
+    'author':'teacher',
     'email': 'gshow@gmail.com',
-    'date':'2020-02-10'
+    'date':'2022-02-10'
     }
     json_data =json.dumps(data)
 
@@ -30,8 +30,9 @@ def post_data():
 def update_data():
     data={
     'id':'5',
-    'author':'sakuni',
-    'email': 'sakuni@gmail.com',
+    'title':'Nothing',
+    'author':'nody',
+    'email': 'nody@gmail.com',
     'date':'2022-02-22'
     }
     json_data =json.dumps(data)
@@ -52,6 +53,6 @@ def delete_data():
     print(data)
 
 # get_data()
-# post_data()
-update_data()
+post_data()
+# update_data()
 # delete_data()
