@@ -37,10 +37,10 @@ def get_data(id=None):
 
 def post_data():
     data={
-    'title':'REST',
-    'author':'teacher2',
-    'email': 'teacher2@gmail.com',
-    'date':'2017-04-14'
+    'title':'Java',
+    'author':'teacher',
+    'email': 'anew@gmail.com',
+    'date':'2022-04-14'
     }
     json_data =json.dumps(data)
 
@@ -74,6 +74,6 @@ def delete_data():
     print(data)
 
 # get_data(1)
-# post_data()
+post_data()
 # update_data()
-delete_data()
+# delete_data()
