@@ -2,7 +2,8 @@ import requests
 import json
 
 # URL="http://127.0.0.1:8000/articleapi/"
-URL="http://127.0.0.1:8000/clarticleapi/"
+# URL="http://127.0.0.1:8000/clarticleapi/"
+URL="http://127.0.0.1:8000/articleapi/"
 def get_data(id=None):
     data={}
     if id is not None:
@@ -20,9 +21,10 @@ def post_data():
     'email': 'gshow@gmail.com',
     'date':'2022-02-10'
     }
+    headers ={'content-Type':'application/json'}
     json_data =json.dumps(data)
 
-    r=requests.post(url=URL,data=json_data)
+    r=requests.post(url=URL,headers=headers,data=json_data)
 
     data=r.json()
     print(data)
