@@ -6,4 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('generic/',include('genericview.urls')),
     path('concrete/',include('concreteview.urls')),
+    path('viewset/',include('viewsetapp.urls')),
 ]
