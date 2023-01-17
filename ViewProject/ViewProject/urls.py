@@ -7,4 +7,5 @@ urlpatterns = [
     path('generic/',include('genericview.urls')),
     path('concrete/',include('concreteview.urls')),
     path('viewset/',include('viewsetapp.urls')),
+    path('modelviewset/',include('modelviewsetapp.urls')),
 ]

@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'genericview',
     'concreteview',
     'viewsetapp',
+    'modelviewsetapp',
 ]
 
 MIDDLEWARE = [
