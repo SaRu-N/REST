@@ -31,8 +31,15 @@ from .custompermissions import MyPermission
 #     permission_classes =[MyPermission]
 
 # Token Authentication
+# class StudentViewSet(viewsets.ModelViewSet):
+#     queryset =Student.objects.all()
+#     serializer_class = StudentSerializer
+#     authentication_classes = [TokenAuthentication]
+#     permission_classes =[IsAuthenticated]
+
+# To use token authentication
 class StudentViewSet(viewsets.ModelViewSet):
     queryset =Student.objects.all()
     serializer_class = StudentSerializer
     authentication_classes = [TokenAuthentication]
-    permission_classes =[IsAuthenticated]
+    permission_classes =[IsAdminUser]
