@@ -13,5 +13,5 @@ router.register('studentapi',views.StudentViewSet,basename='student')
 urlpatterns = [
    path('',include(router.urls)),
    # path('gettoken/',obtain_auth_token),
-    path('gettoken/', CustomAuthToken.as_view())
+    # path('gettoken/', CustomAuthToken.as_view())
 ]
