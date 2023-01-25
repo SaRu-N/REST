@@ -1,4 +1,5 @@
-from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
+from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination,CursorPagination
+
 
 # class MyPagination(PageNumberPagination):
 #     page_size =3
@@ -12,4 +13,11 @@ class MyPagination(LimitOffsetPagination):
     # limit_query_param ='mtlimit'
     # offset_query_param='myoffset'
     max_limit=7
+
+
+class MyPagination(CursorPagination):
+    page_size =3
+    ordering='roll'
+    # cursor_query_param ='cu'
+
 
